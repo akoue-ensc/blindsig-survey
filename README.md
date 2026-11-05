@@ -3,6 +3,7 @@
 Proof of concept of an anonymous survey with **one response per person**, no login, and no way for the server to link a response to an email. 
 Built on RSA blind signatures (Chaum, full-domain hash).
 
+> [!IMPORTANT]
 > **Status: PoC, not audited. Do not use in production.**
 > Hand-rolled RSA-FDH blind signatures, not RFC 9474. Email ownership is not verified yet (see `TODO` in `server.py`).
 
