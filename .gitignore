@@ -218,3 +218,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Secrets
+signing_key.pem
+email_hmac.secret
+
+# Database
+*.db

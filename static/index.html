@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questionnaire anonyme</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Questionnaire anonyme</h1>
+ 
+        <section id="step1">
+          <h2>1. Obtenir ton jeton</h2>
+          <p>Ton email sert uniquement à vérifier que tu fais partie de l'école (une participation par personne).
+             Il n'est pas lié à tes réponses : le jeton est signé à l'aveugle, le serveur ne peut pas faire le lien.</p>
+          <input id="email" type="email" placeholder="prenom.nom@ensc.fr" autocomplete="email">
+          <button id="get">Obtenir mon jeton</button>
+        </section>
+         
+        <section id="step2" class="hidden">
+          <h2>2. Répondre</h2>
+          <p>Conseil : fais cette étape plus tard / depuis un autre réseau que l'étape 1 pour éviter toute corrélation temporelle.</p>
+          <p>Code de reprise (pour répondre depuis un autre appareil, ouvre ce lien là-bas) :<br>
+             <code id="resume"></code></p>
+          <fieldset>
+            <legend>J'ai bien dormi cette semaine (1 = pas du tout, 5 = tout à fait)</legend>
+            <label><input type="radio" name="sleep" value="1"> 1</label>
+            <label><input type="radio" name="sleep" value="2"> 2</label>
+            <label><input type="radio" name="sleep" value="3"> 3</label>
+            <label><input type="radio" name="sleep" value="4"> 4</label>
+            <label><input type="radio" name="sleep" value="5"> 5</label>
+          </fieldset>
+          <fieldset>
+            <legend>Charge de travail perçue (1 - 5)</legend>
+            <label><input type="radio" name="load" value="1"> 1</label>
+            <label><input type="radio" name="load" value="2"> 2</label>
+            <label><input type="radio" name="load" value="3"> 3</label>
+            <label><input type="radio" name="load" value="4"> 4</label>
+            <label><input type="radio" name="load" value="5"> 5</label>
+          </fieldset>
+          <button id="send">Envoyer</button>
+        </section>
+
+        <p id="msg" role="status"></p>
+    </body>
+</html>

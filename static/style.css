@@ -1,0 +1,31 @@
+body { 
+    font: 16px/1.5 system-ui, sans-serif; 
+    max-width: 38rem; 
+    margin: 2rem auto; 
+    padding: 0 1rem; 
+    color: #222; 
+}
+
+fieldset { 
+    margin: 1rem 0; 
+    border: 1px solid #ccc; 
+}
+
+input[type=email], textarea { 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+code { 
+    word-break: break-all; 
+    font-size: .8rem; 
+}
+
+.hidden { 
+    display: none; 
+}
+
+#msg { 
+    margin-top: 1rem; 
+    font-weight: 600; 
+}
